@@ -1,3 +1,16 @@
 <h1> AmeriResources </h1>
+<br />
 
 <h2> Resources for current AmeriCorps and AmeriCorps Alum</h2>
+<br />
+
+<div class = col-5>
+  <div class = 'booyah-box'>
+    <% @resources.each do |resource| %>
+      <h3><%= resource.name %></h3>
+      <br />
+      <h3><%= resource.description %></h3>
+      <h3><%= resource.rating %></h3>
+    <% end %>
+  </div>
+<div>
