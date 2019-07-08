@@ -1,0 +1,10 @@
+<div class = "booyah-box">
+  <h1> Add a New Resource </h1>
+  <%= simple_form_for @resource do |f| %>
+    <%= f.input :name %>
+    <%= f.input :description %>
+    <%= f.input :rating %>
+    <%= f.submit 'Share' %>
+  <% end %>
+  <br />
+</div>
