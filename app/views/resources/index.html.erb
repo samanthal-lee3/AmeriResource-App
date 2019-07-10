@@ -4,6 +4,12 @@
 <h2> Resources for current AmeriCorps and AmeriCorps Alum</h2>
 <br />
 
+<div class = "btn btn-secondary">
+  <%= link_to "Add a Resource", new_resource_path %>
+</div>
+<br />
+<br />
+
 <div class = col-5>
   <div class = 'booyah-box'>
     <% @resources.each do |resource| %>
@@ -12,6 +18,7 @@
       <h3><%= resource.description %></h3>
       <h3><%= resource.rating %></h3>
     <% end %>
+    <br />
   </div>
 <div>
 
